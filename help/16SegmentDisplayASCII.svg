@@ -1,0 +1,1172 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" version="1.1" id="sixteensegmentdisplay" height="2300" width="3860">
+<metadata id="fileinfo">
+<rdf:RDF>
+<cc:Work rdf:about="Characters on 16 Segment Display">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+<dc:title>Characters on 16 Segment Display</dc:title>
+<cc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/" />
+<dc:creator>
+<cc:Agent>
+<dc:title>created on 35007.de by the author</dc:title>
+</cc:Agent>
+</dc:creator>
+<dc:rights>
+<cc:Agent>
+<dc:title>Johannes Loose</dc:title>
+<dc:email>johannes@35007.de</dc:email>
+</cc:Agent>
+</dc:rights>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<defs>
+<!-- Segment Definitions -->
+ <symbol id="DisplaySegments">
+<path id="sA1" d="m 30,0 -10,10 30,30 55,0 0,-30 -10,-10 z" />
+<path id="sA2" d="m 115,40 55,0 30,-30 -10,-10 -65,0 -10,10 z" />
+<path id="sB" d="m 180,50 30,-30 10,10 0,120 -10,20 -30,-20 z" />
+<path id="sC" d="m 180,210 30,-20 10,20 0,120 -10,10 -30,-30 z" />
+<path id="sD1" d="m 50,320 55,0 0,30 -10,10 -65,0 -10,-10 z" />
+<path id="sD2" d="m 115,320 55,0 30,30 -10,10 -65,0 -10,-10 z" />
+<path id="sE" d="m 10,340 -10,-10 0,-120 10,-20 30,20 0,100 z" />
+<path id="sF" d="m 10,170 -10,-20 0,-120 10,-10 30,30 0,100 -30,20 0,0 z" />
+<path id="sG1" d="m 10,180 40,-20 55,0 0,40 -55,0 -40,-20 z" />
+<path id="sG2" d="m 210,180 -40,20 -55,0 0,-40 55,0 z" />
+<path id="sH"  d="m 50,50 15,0 15,30 20,70 -15,0 -35,-50 z" />
+<path id="sI"  d="m 125,50 0,30 -15,70 -15,-70 0,-30 z" />
+<path id="sJ"  d="m 140,80 15,-30 15,0 0,50 -35,50 -15,0 z" />
+<path id="sK"  d="m 85,210 15,0 -20,70 -15,30 -15,0 0,-50 z" />
+<path id="sL" d="m 110,210 15,70 0,30 -30,0 0,-30 z" />
+<path id="sM"  d="m 120,210 15,0 35,50 0,50 -15,0 -15,-30 z" />
+<circle id="sDP" cx="215" cy="350" r="7" />
+</symbol>
+<!-- Segment Label Definitions -->
+<symbol id="DisplayLabels">
+<text id="lA1" x="60" y="30">A1</text>
+<text id="lA2" x="135" y="30">A2</text>
+<text id="lB" x="195" y="100">B</text>
+<text id="lC" x="195" y="270">C</text>
+<text id="lD1" x="60" y="345">D1</text>
+<text id="lD2" x="135" y="345">D2</text>
+<text id="lE" x="10" y="270">E</text>
+<text id="lF" x="10" y="100">F</text>
+<text id="lG1" x="60" y="180">G1</text>
+<text id="lG2" x="135" y="180">G2</text>
+<text id="lH" x="60" y="100">H</text>
+<text id="lI" x="107" y="100">I</text>
+<text id="lJ" x="150" y="100">J</text>
+<text id="lK" x="60" y="270">K</text>
+<text id="lL" x="107" y="270">L</text>
+<text id="lM" x="150" y="270">M</text>
+<text id="lDP" x="215" y="350">DP</text>
+</symbol>
+
+<!-- Char Label Definitions, Unicode Mapping -->
+<symbol id="CharLabels">
+<text id="cU0020" char=" " utf8code="x0020">  U+0020</text>
+<text id="cU0021" char="!" utf8code="x0021">! U+0021</text>
+<text id="cU0022" char="&quot;" utf8code="x0022">&quot; U+0022</text>
+<text id="cU0023" char="#" utf8code="x0023"># U+0023</text>
+<text id="cU0024" char="$" utf8code="x0024">$ U+0024</text>
+<text id="cU0025" char="%" utf8code="x0025">% U+0025</text>
+<text id="cU0026" char="&amp;" utf8code="x0026">&amp; U+0026</text>
+<text id="cU0027" char="&apos;" utf8code="x0027">&apos; U+0027</text>
+<text id="cU0028" char="(" utf8code="x0028">( U+0028</text>
+<text id="cU0029" char=")" utf8code="x0029">) U+0029</text>
+<text id="cU002A" char="*" utf8code="x002A">* U+002A</text>
+<text id="cU002B" char="+" utf8code="x002B">+ U+002B</text>
+<text id="cU002C" char="," utf8code="x002C">, U+002C</text>
+<text id="cU002D" char="-" utf8code="x002D">- U+002D</text>
+<text id="cU002E" char="." utf8code="x002E">. U+002E</text>
+<text id="cU002F" char="/" utf8code="x002F">/ U+002F</text>
+<text id="cU0030" char="0" utf8code="x0030">0 U+0030</text>
+<text id="cU0031" char="1" utf8code="x0031">1 U+0031</text>
+<text id="cU0032" char="2" utf8code="x0032">2 U+0032</text>
+<text id="cU0033" char="3" utf8code="x0033">3 U+0033</text>
+<text id="cU0034" char="4" utf8code="x0034">4 U+0034</text>
+<text id="cU0035" char="5" utf8code="x0035">5 U+0035</text>
+<text id="cU0036" char="6" utf8code="x0036">6 U+0036</text>
+<text id="cU0037" char="7" utf8code="x0037">7 U+0037</text>
+<text id="cU0038" char="8" utf8code="x0038">8 U+0038</text>
+<text id="cU0039" char="9" utf8code="x0039">9 U+0039</text>
+<text id="cU003A" char=":" utf8code="x003A">: U+003A</text>
+<text id="cU003B" char=";" utf8code="x003B">; U+003B</text>
+<text id="cU003C" char="&lt;" utf8code="x003C">&lt; U+003C</text>
+<text id="cU003D" char="=" utf8code="x003D">= U+003D</text>
+<text id="cU003E" char="&gt;" utf8code="x003E">&gt; U+003E</text>
+<text id="cU003F" char="?" utf8code="x003F">? U+003F</text>
+<text id="cU0040" char="@" utf8code="x0040">@ U+0040</text>
+<text id="cU0041" char="A" utf8code="x0041">A U+0041</text>
+<text id="cU0042" char="B" utf8code="x0042">B U+0042</text>
+<text id="cU0043" char="C" utf8code="x0043">C U+0043</text>
+<text id="cU0044" char="D" utf8code="x0044">D U+0044</text>
+<text id="cU0045" char="E" utf8code="x0045">E U+0045</text>
+<text id="cU0046" char="F" utf8code="x0046">F U+0046</text>
+<text id="cU0047" char="G" utf8code="x0047">G U+0047</text>
+<text id="cU0048" char="H" utf8code="x0048">H U+0048</text>
+<text id="cU0049" char="I" utf8code="x0049">I U+0049</text>
+<text id="cU004A" char="J" utf8code="x004A">J U+004A</text>
+<text id="cU004B" char="K" utf8code="x004B">K U+004B</text>
+<text id="cU004C" char="L" utf8code="x004C">L U+004C</text>
+<text id="cU004D" char="M" utf8code="x004D">M U+004D</text>
+<text id="cU004E" char="N" utf8code="x004E">N U+004E</text>
+<text id="cU004F" char="O" utf8code="x004F">O U+004F</text>
+<text id="cU0050" char="P" utf8code="x0050">P U+0050</text>
+<text id="cU0051" char="Q" utf8code="x0051">Q U+0051</text>
+<text id="cU0052" char="R" utf8code="x0052">R U+0052</text>
+<text id="cU0053" char="S" utf8code="x0053">S U+0053</text>
+<text id="cU0054" char="T" utf8code="x0054">T U+0054</text>
+<text id="cU0055" char="U" utf8code="x0055">U U+0055</text>
+<text id="cU0056" char="V" utf8code="x0056">V U+0056</text>
+<text id="cU0057" char="W" utf8code="x0057">W U+0057</text>
+<text id="cU0058" char="X" utf8code="x0058">X U+0058</text>
+<text id="cU0059" char="Y" utf8code="x0059">Y U+0059</text>
+<text id="cU005A" char="Z" utf8code="x005A">Z U+005A</text>
+<text id="cU005B" char="[" utf8code="x005B">[ U+005B</text>
+<text id="cU005C" char="\" utf8code="x005C">\ U+005C</text>
+<text id="cU005D" char="]" utf8code="x005D">] U+005D</text>
+<text id="cU005E" char="^" utf8code="x005E">^ U+005E</text>
+<text id="cU005F" char="_" utf8code="x005F">_ U+005F</text>
+<text id="cU0060" char="`" utf8code="x0060">` U+0060</text>
+<text id="cU0061" char="a" utf8code="x0061">a U+0061</text>
+<text id="cU0062" char="b" utf8code="x0062">b U+0062</text>
+<text id="cU0063" char="c" utf8code="x0063">c U+0063</text>
+<text id="cU0064" char="d" utf8code="x0064">d U+0064</text>
+<text id="cU0065" char="e" utf8code="x0065">e U+0065</text>
+<text id="cU0066" char="f" utf8code="x0066">f U+0066</text>
+<text id="cU0067" char="g" utf8code="x0067">g U+0067</text>
+<text id="cU0068" char="h" utf8code="x0068">h U+0068</text>
+<text id="cU0069" char="i" utf8code="x0069">i U+0069</text>
+<text id="cU006A" char="j" utf8code="x006A">j U+006A</text>
+<text id="cU006B" char="k" utf8code="x006B">k U+006B</text>
+<text id="cU006C" char="l" utf8code="x006C">l U+006C</text>
+<text id="cU006D" char="m" utf8code="x006D">m U+006D</text>
+<text id="cU006E" char="n" utf8code="x006E">n U+006E</text>
+<text id="cU006F" char="o" utf8code="x006F">o U+006F</text>
+<text id="cU0070" char="p" utf8code="x0070">p U+0070</text>
+<text id="cU0071" char="q" utf8code="x0071">q U+0071</text>
+<text id="cU0072" char="r" utf8code="x0072">r U+0072</text>
+<text id="cU0073" char="s" utf8code="x0073">s U+0073</text>
+<text id="cU0074" char="t" utf8code="x0074">t U+0074</text>
+<text id="cU0075" char="u" utf8code="x0075">u U+0075</text>
+<text id="cU0076" char="v" utf8code="x0076">v U+0076</text>
+<text id="cU0077" char="w" utf8code="x0077">w U+0077</text>
+<text id="cU0078" char="x" utf8code="x0078">x U+0078</text>
+<text id="cU0079" char="y" utf8code="x0079">y U+0079</text>
+<text id="cU007A" char="z" utf8code="x007A">z U+007A</text>
+<text id="cU007B" char="{" utf8code="x007B">{ U+007B</text>
+<text id="cU007C" char="|" utf8code="x007C">| U+007C</text>
+<text id="cU007D" char="}" utf8code="x007D">} U+007D</text>
+<text id="cU007E" char="~" utf8code="x007E">~ U+007E</text>
+<text id="cU007F" char="" utf8code="x007F"> U+007F</text>
+</symbol>
+<!-- Char Symbol Definitions -->
+<symbol id="U0020">
+</symbol>
+<symbol id="U0021">
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sDP" />
+</symbol>
+<symbol id="U0022">
+<use xlink:href="#sB" />
+<use xlink:href="#sF" />
+</symbol>
+<symbol id="U0023">
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sI" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U0024">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sI" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U0025">
+<use xlink:href="#sA1" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sI" />
+<use xlink:href="#sJ" />
+<use xlink:href="#sK" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U0026">
+<use xlink:href="#sA1" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sH" />
+<use xlink:href="#sJ" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U0027">
+<use xlink:href="#sB" />
+</symbol>
+<symbol id="U0028">
+<use xlink:href="#sJ" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U0029">
+<use xlink:href="#sH" />
+<use xlink:href="#sK" />
+</symbol>
+<symbol id="U002A">
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sH" />
+<use xlink:href="#sI" />
+<use xlink:href="#sJ" />
+<use xlink:href="#sK" />
+<use xlink:href="#sL" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U002B">
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sI" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U002C">
+<use xlink:href="#sD1" />
+</symbol>
+<symbol id="U002D">
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U002E">
+<use xlink:href="#sDP" />
+</symbol>
+<symbol id="U002F">
+<use xlink:href="#sJ" />
+<use xlink:href="#sK" />
+</symbol>
+<symbol id="U0030">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sJ" />
+<use xlink:href="#sK" />
+</symbol>
+<symbol id="U0031">
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+</symbol>
+<symbol id="U0032">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sB" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U0033">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U0034">
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U0035">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U0036">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U0037">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+</symbol>
+<symbol id="U0038">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U0039">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U003A">
+<use xlink:href="#sG1" />
+<use xlink:href="#sD1" />
+</symbol>
+<symbol id="U003B">
+<use xlink:href="#sA1" />
+<use xlink:href="#sK" />
+</symbol>
+<symbol id="U003C">
+<use xlink:href="#sJ" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U003D">
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U003E">
+<use xlink:href="#sH" />
+<use xlink:href="#sK" />
+</symbol>
+<symbol id="U003F">
+<use xlink:href="#sA2" />
+<use xlink:href="#sB" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sL" />
+<use xlink:href="#sDP" />
+</symbol>
+<symbol id="U0040">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U0041">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U0042">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sI" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U0043">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+</symbol>
+<symbol id="U0044">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sI" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U0045">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+</symbol>
+<symbol id="U0046">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+</symbol>
+<symbol id="U0047">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U0048">
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U0049">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sI" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U004A">
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+</symbol>
+<symbol id="U004B">
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sJ" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U004C">
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+</symbol>
+<symbol id="U004D">
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sH" />
+<use xlink:href="#sJ" />
+</symbol>
+<symbol id="U004E">
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sH" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U004F">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+</symbol>
+<symbol id="U0050">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sB" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U0051">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U0052">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sB" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U0053">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U0054">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sI" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U0055">
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+</symbol>
+<symbol id="U0056">
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sJ" />
+<use xlink:href="#sK" />
+</symbol>
+<symbol id="U0057">
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sK" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U0058">
+<use xlink:href="#sH" />
+<use xlink:href="#sJ" />
+<use xlink:href="#sK" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U0059">
+<use xlink:href="#sH" />
+<use xlink:href="#sJ" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U005A">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sJ" />
+<use xlink:href="#sK" />
+</symbol>
+<symbol id="U005B">
+<use xlink:href="#sA2" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sI" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U005C">
+<use xlink:href="#sH" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U005D">
+<use xlink:href="#sA1" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sI" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U005E">
+<use xlink:href="#sK" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U005F">
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+</symbol>
+<symbol id="U0060">
+<use xlink:href="#sH" />
+</symbol>
+<symbol id="U0061">
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U0062">
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U0063">
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U0064">
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U0065">
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sK" />
+</symbol>
+<symbol id="U0066">
+<use xlink:href="#sA2" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sI" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U0067">
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sK" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U0068">
+<use xlink:href="#sC" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U0069">
+<use xlink:href="#sA1" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U006A">
+<use xlink:href="#sA2" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U006B">
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U006C">
+<use xlink:href="#sA1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sI" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U006D">
+<use xlink:href="#sC" />
+<use xlink:href="#sE" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U006E">
+<use xlink:href="#sC" />
+<use xlink:href="#sE" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U006F">
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U0070">
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sL" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U0071">
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U0072">
+<use xlink:href="#sE" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+</symbol>
+<symbol id="U0073">
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U0074">
+<use xlink:href="#sD2" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sI" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U0075">
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+</symbol>
+<symbol id="U0076">
+<use xlink:href="#sE" />
+<use xlink:href="#sK" />
+</symbol>
+<symbol id="U0077">
+<use xlink:href="#sC" />
+<use xlink:href="#sE" />
+<use xlink:href="#sK" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U0078">
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sK" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U0079">
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sM" />
+</symbol>
+<symbol id="U007A">
+<use xlink:href="#sD1" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sK" />
+</symbol>
+<symbol id="U007B">
+<use xlink:href="#sA2" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sI" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U007C">
+<use xlink:href="#sI" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U007D">
+<use xlink:href="#sA1" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sI" />
+<use xlink:href="#sL" />
+</symbol>
+<symbol id="U007E">
+<use xlink:href="#sF" />
+<use xlink:href="#sH" />
+<use xlink:href="#sJ" />
+</symbol>
+<symbol id="U007F">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sH" />
+<use xlink:href="#sI" />
+<use xlink:href="#sJ" />
+<use xlink:href="#sK" />
+<use xlink:href="#sL" />
+<use xlink:href="#sM" />
+<use xlink:href="#sDP" />
+</symbol>
+<symbol id="All">
+<use xlink:href="#sA1" />
+<use xlink:href="#sA2" />
+<use xlink:href="#sB" />
+<use xlink:href="#sC" />
+<use xlink:href="#sD1" />
+<use xlink:href="#sD2" />
+<use xlink:href="#sE" />
+<use xlink:href="#sF" />
+<use xlink:href="#sG1" />
+<use xlink:href="#sG2" />
+<use xlink:href="#sH" />
+<use xlink:href="#sI" />
+<use xlink:href="#sJ" />
+<use xlink:href="#sK" />
+<use xlink:href="#sL" />
+<use xlink:href="#sM" />
+<use xlink:href="#sDP" />
+</symbol>
+</defs>
+<!-- Display Background Matrix -->
+<g style="fill:#f0f0f0">
+<use xlink:href="#All" transform="translate(20 20)" />
+<use xlink:href="#All" transform="translate(20 400)" />
+<use xlink:href="#All" transform="translate(20 780)" />
+<use xlink:href="#All" transform="translate(20 1160)" />
+<use xlink:href="#All" transform="translate(20 1540)" />
+<use xlink:href="#All" transform="translate(20 1920)" />
+<use xlink:href="#All" transform="translate(260 20)" />
+<use xlink:href="#All" transform="translate(260 400)" />
+<use xlink:href="#All" transform="translate(260 780)" />
+<use xlink:href="#All" transform="translate(260 1160)" />
+<use xlink:href="#All" transform="translate(260 1540)" />
+<use xlink:href="#All" transform="translate(260 1920)" />
+<use xlink:href="#All" transform="translate(500 20)" />
+<use xlink:href="#All" transform="translate(500 400)" />
+<use xlink:href="#All" transform="translate(500 780)" />
+<use xlink:href="#All" transform="translate(500 1160)" />
+<use xlink:href="#All" transform="translate(500 1540)" />
+<use xlink:href="#All" transform="translate(500 1920)" />
+<use xlink:href="#All" transform="translate(740 20)" />
+<use xlink:href="#All" transform="translate(740 400)" />
+<use xlink:href="#All" transform="translate(740 780)" />
+<use xlink:href="#All" transform="translate(740 1160)" />
+<use xlink:href="#All" transform="translate(740 1540)" />
+<use xlink:href="#All" transform="translate(740 1920)" />
+<use xlink:href="#All" transform="translate(980 20)" />
+<use xlink:href="#All" transform="translate(980 400)" />
+<use xlink:href="#All" transform="translate(980 780)" />
+<use xlink:href="#All" transform="translate(980 1160)" />
+<use xlink:href="#All" transform="translate(980 1540)" />
+<use xlink:href="#All" transform="translate(980 1920)" />
+<use xlink:href="#All" transform="translate(1220 20)" />
+<use xlink:href="#All" transform="translate(1220 400)" />
+<use xlink:href="#All" transform="translate(1220 780)" />
+<use xlink:href="#All" transform="translate(1220 1160)" />
+<use xlink:href="#All" transform="translate(1220 1540)" />
+<use xlink:href="#All" transform="translate(1220 1920)" />
+<use xlink:href="#All" transform="translate(1460 20)" />
+<use xlink:href="#All" transform="translate(1460 400)" />
+<use xlink:href="#All" transform="translate(1460 780)" />
+<use xlink:href="#All" transform="translate(1460 1160)" />
+<use xlink:href="#All" transform="translate(1460 1540)" />
+<use xlink:href="#All" transform="translate(1460 1920)" />
+<use xlink:href="#All" transform="translate(1700 20)" />
+<use xlink:href="#All" transform="translate(1700 400)" />
+<use xlink:href="#All" transform="translate(1700 780)" />
+<use xlink:href="#All" transform="translate(1700 1160)" />
+<use xlink:href="#All" transform="translate(1700 1540)" />
+<use xlink:href="#All" transform="translate(1700 1920)" />
+<use xlink:href="#All" transform="translate(1940 20)" />
+<use xlink:href="#All" transform="translate(1940 400)" />
+<use xlink:href="#All" transform="translate(1940 780)" />
+<use xlink:href="#All" transform="translate(1940 1160)" />
+<use xlink:href="#All" transform="translate(1940 1540)" />
+<use xlink:href="#All" transform="translate(1940 1920)" />
+<use xlink:href="#All" transform="translate(2180 20)" />
+<use xlink:href="#All" transform="translate(2180 400)" />
+<use xlink:href="#All" transform="translate(2180 780)" />
+<use xlink:href="#All" transform="translate(2180 1160)" />
+<use xlink:href="#All" transform="translate(2180 1540)" />
+<use xlink:href="#All" transform="translate(2180 1920)" />
+<use xlink:href="#All" transform="translate(2420 20)" />
+<use xlink:href="#All" transform="translate(2420 400)" />
+<use xlink:href="#All" transform="translate(2420 780)" />
+<use xlink:href="#All" transform="translate(2420 1160)" />
+<use xlink:href="#All" transform="translate(2420 1540)" />
+<use xlink:href="#All" transform="translate(2420 1920)" />
+<use xlink:href="#All" transform="translate(2660 20)" />
+<use xlink:href="#All" transform="translate(2660 400)" />
+<use xlink:href="#All" transform="translate(2660 780)" />
+<use xlink:href="#All" transform="translate(2660 1160)" />
+<use xlink:href="#All" transform="translate(2660 1540)" />
+<use xlink:href="#All" transform="translate(2660 1920)" />
+<use xlink:href="#All" transform="translate(2900 20)" />
+<use xlink:href="#All" transform="translate(2900 400)" />
+<use xlink:href="#All" transform="translate(2900 780)" />
+<use xlink:href="#All" transform="translate(2900 1160)" />
+<use xlink:href="#All" transform="translate(2900 1540)" />
+<use xlink:href="#All" transform="translate(2900 1920)" />
+<use xlink:href="#All" transform="translate(3140 20)" />
+<use xlink:href="#All" transform="translate(3140 400)" />
+<use xlink:href="#All" transform="translate(3140 780)" />
+<use xlink:href="#All" transform="translate(3140 1160)" />
+<use xlink:href="#All" transform="translate(3140 1540)" />
+<use xlink:href="#All" transform="translate(3140 1920)" />
+<use xlink:href="#All" transform="translate(3380 20)" />
+<use xlink:href="#All" transform="translate(3380 400)" />
+<use xlink:href="#All" transform="translate(3380 780)" />
+<use xlink:href="#All" transform="translate(3380 1160)" />
+<use xlink:href="#All" transform="translate(3380 1540)" />
+<use xlink:href="#All" transform="translate(3380 1920)" />
+<use xlink:href="#All" transform="translate(3620 20)" />
+<use xlink:href="#All" transform="translate(3620 400)" />
+<use xlink:href="#All" transform="translate(3620 780)" />
+<use xlink:href="#All" transform="translate(3620 1160)" />
+<use xlink:href="#All" transform="translate(3620 1540)" />
+<use xlink:href="#All" transform="translate(3620 1920)" />
+</g>
+<!--Display Chars -->
+<g style="fill:#f00000">
+<use xlink:href="#U0020" transform="translate(20 20)" />
+<use xlink:href="#U0021" transform="translate(260 20)" />
+<use xlink:href="#U0022" transform="translate(500 20)" />
+<use xlink:href="#U0023" transform="translate(740 20)" />
+<use xlink:href="#U0024" transform="translate(980 20)" />
+<use xlink:href="#U0025" transform="translate(1220 20)" />
+<use xlink:href="#U0026" transform="translate(1460 20)" />
+<use xlink:href="#U0027" transform="translate(1700 20)" />
+<use xlink:href="#U0028" transform="translate(1940 20)" />
+<use xlink:href="#U0029" transform="translate(2180 20)" />
+<use xlink:href="#U002A" transform="translate(2420 20)" />
+<use xlink:href="#U002B" transform="translate(2660 20)" />
+<use xlink:href="#U002C" transform="translate(2900 20)" />
+<use xlink:href="#U002D" transform="translate(3140 20)" />
+<use xlink:href="#U002E" transform="translate(3380 20)" />
+<use xlink:href="#U002F" transform="translate(3620 20)" />
+<use xlink:href="#U0030" transform="translate(20 400)" />
+<use xlink:href="#U0031" transform="translate(260 400)" />
+<use xlink:href="#U0032" transform="translate(500 400)" />
+<use xlink:href="#U0033" transform="translate(740 400)" />
+<use xlink:href="#U0034" transform="translate(980 400)" />
+<use xlink:href="#U0035" transform="translate(1220 400)" />
+<use xlink:href="#U0036" transform="translate(1460 400)" />
+<use xlink:href="#U0037" transform="translate(1700 400)" />
+<use xlink:href="#U0038" transform="translate(1940 400)" />
+<use xlink:href="#U0039" transform="translate(2180 400)" />
+<use xlink:href="#U003A" transform="translate(2420 400)" />
+<use xlink:href="#U003B" transform="translate(2660 400)" />
+<use xlink:href="#U003C" transform="translate(2900 400)" />
+<use xlink:href="#U003D" transform="translate(3140 400)" />
+<use xlink:href="#U003E" transform="translate(3380 400)" />
+<use xlink:href="#U003F" transform="translate(3620 400)" />
+<use xlink:href="#U0040" transform="translate(20 780)" />
+<use xlink:href="#U0041" transform="translate(260 780)" />
+<use xlink:href="#U0042" transform="translate(500 780)" />
+<use xlink:href="#U0043" transform="translate(740 780)" />
+<use xlink:href="#U0044" transform="translate(980 780)" />
+<use xlink:href="#U0045" transform="translate(1220 780)" />
+<use xlink:href="#U0046" transform="translate(1460 780)" />
+<use xlink:href="#U0047" transform="translate(1700 780)" />
+<use xlink:href="#U0048" transform="translate(1940 780)" />
+<use xlink:href="#U0049" transform="translate(2180 780)" />
+<use xlink:href="#U004A" transform="translate(2420 780)" />
+<use xlink:href="#U004B" transform="translate(2660 780)" />
+<use xlink:href="#U004C" transform="translate(2900 780)" />
+<use xlink:href="#U004D" transform="translate(3140 780)" />
+<use xlink:href="#U004E" transform="translate(3380 780)" />
+<use xlink:href="#U004F" transform="translate(3620 780)" />
+<use xlink:href="#U0050" transform="translate(20 1160)" />
+<use xlink:href="#U0051" transform="translate(260 1160)" />
+<use xlink:href="#U0052" transform="translate(500 1160)" />
+<use xlink:href="#U0053" transform="translate(740 1160)" />
+<use xlink:href="#U0054" transform="translate(980 1160)" />
+<use xlink:href="#U0055" transform="translate(1220 1160)" />
+<use xlink:href="#U0056" transform="translate(1460 1160)" />
+<use xlink:href="#U0057" transform="translate(1700 1160)" />
+<use xlink:href="#U0058" transform="translate(1940 1160)" />
+<use xlink:href="#U0059" transform="translate(2180 1160)" />
+<use xlink:href="#U005A" transform="translate(2420 1160)" />
+<use xlink:href="#U005B" transform="translate(2660 1160)" />
+<use xlink:href="#U005C" transform="translate(2900 1160)" />
+<use xlink:href="#U005D" transform="translate(3140 1160)" />
+<use xlink:href="#U005E" transform="translate(3380 1160)" />
+<use xlink:href="#U005F" transform="translate(3620 1160)" />
+<use xlink:href="#U0060" transform="translate(20 1540)" />
+<use xlink:href="#U0061" transform="translate(260 1540)" />
+<use xlink:href="#U0062" transform="translate(500 1540)" />
+<use xlink:href="#U0063" transform="translate(740 1540)" />
+<use xlink:href="#U0064" transform="translate(980 1540)" />
+<use xlink:href="#U0065" transform="translate(1220 1540)" />
+<use xlink:href="#U0066" transform="translate(1460 1540)" />
+<use xlink:href="#U0067" transform="translate(1700 1540)" />
+<use xlink:href="#U0068" transform="translate(1940 1540)" />
+<use xlink:href="#U0069" transform="translate(2180 1540)" />
+<use xlink:href="#U006A" transform="translate(2420 1540)" />
+<use xlink:href="#U006B" transform="translate(2660 1540)" />
+<use xlink:href="#U006C" transform="translate(2900 1540)" />
+<use xlink:href="#U006D" transform="translate(3140 1540)" />
+<use xlink:href="#U006E" transform="translate(3380 1540)" />
+<use xlink:href="#U006F" transform="translate(3620 1540)" />
+<use xlink:href="#U0070" transform="translate(20 1920)" />
+<use xlink:href="#U0071" transform="translate(260 1920)" />
+<use xlink:href="#U0072" transform="translate(500 1920)" />
+<use xlink:href="#U0073" transform="translate(740 1920)" />
+<use xlink:href="#U0074" transform="translate(980 1920)" />
+<use xlink:href="#U0075" transform="translate(1220 1920)" />
+<use xlink:href="#U0076" transform="translate(1460 1920)" />
+<use xlink:href="#U0077" transform="translate(1700 1920)" />
+<use xlink:href="#U0078" transform="translate(1940 1920)" />
+<use xlink:href="#U0079" transform="translate(2180 1920)" />
+<use xlink:href="#U007A" transform="translate(2420 1920)" />
+<use xlink:href="#U007B" transform="translate(2660 1920)" />
+<use xlink:href="#U007C" transform="translate(2900 1920)" />
+<use xlink:href="#U007D" transform="translate(3140 1920)" />
+<use xlink:href="#U007E" transform="translate(3380 1920)" />
+<use xlink:href="#U007F" transform="translate(3620 1920)" />
+</g>
+<!-- Display Char Labels -->
+<g style="display:inline">
+<use xlink:href="#cU0020" x="20 " y="20" />
+<use xlink:href="#cU0021" x="260 " y="20" />
+<use xlink:href="#cU0022" x="500 " y="20" />
+<use xlink:href="#cU0023" x="740 " y="20" />
+<use xlink:href="#cU0024" x="980 " y="20" />
+<use xlink:href="#cU0025" x="1220 " y="20" />
+<use xlink:href="#cU0026" x="1460 " y="20" />
+<use xlink:href="#cU0027" x="1700 " y="20" />
+<use xlink:href="#cU0028" x="1940 " y="20" />
+<use xlink:href="#cU0029" x="2180 " y="20" />
+<use xlink:href="#cU002A" x="2420 " y="20" />
+<use xlink:href="#cU002B" x="2660 " y="20" />
+<use xlink:href="#cU002C" x="2900 " y="20" />
+<use xlink:href="#cU002D" x="3140 " y="20" />
+<use xlink:href="#cU002E" x="3380 " y="20" />
+<use xlink:href="#cU002F" x="3620 " y="20" />
+<use xlink:href="#cU0030" x="20 " y="400" />
+<use xlink:href="#cU0031" x="260 " y="400" />
+<use xlink:href="#cU0032" x="500 " y="400" />
+<use xlink:href="#cU0033" x="740 " y="400" />
+<use xlink:href="#cU0034" x="980 " y="400" />
+<use xlink:href="#cU0035" x="1220 " y="400" />
+<use xlink:href="#cU0036" x="1460 " y="400" />
+<use xlink:href="#cU0037" x="1700 " y="400" />
+<use xlink:href="#cU0038" x="1940 " y="400" />
+<use xlink:href="#cU0039" x="2180 " y="400" />
+<use xlink:href="#cU003A" x="2420 " y="400" />
+<use xlink:href="#cU003B" x="2660 " y="400" />
+<use xlink:href="#cU003C" x="2900 " y="400" />
+<use xlink:href="#cU003D" x="3140 " y="400" />
+<use xlink:href="#cU003E" x="3380 " y="400" />
+<use xlink:href="#cU003F" x="3620 " y="400" />
+<use xlink:href="#cU0040" x="20 " y="780" />
+<use xlink:href="#cU0041" x="260 " y="780" />
+<use xlink:href="#cU0042" x="500 " y="780" />
+<use xlink:href="#cU0043" x="740 " y="780" />
+<use xlink:href="#cU0044" x="980 " y="780" />
+<use xlink:href="#cU0045" x="1220 " y="780" />
+<use xlink:href="#cU0046" x="1460 " y="780" />
+<use xlink:href="#cU0047" x="1700 " y="780" />
+<use xlink:href="#cU0048" x="1940 " y="780" />
+<use xlink:href="#cU0049" x="2180 " y="780" />
+<use xlink:href="#cU004A" x="2420 " y="780" />
+<use xlink:href="#cU004B" x="2660 " y="780" />
+<use xlink:href="#cU004C" x="2900 " y="780" />
+<use xlink:href="#cU004D" x="3140 " y="780" />
+<use xlink:href="#cU004E" x="3380 " y="780" />
+<use xlink:href="#cU004F" x="3620 " y="780" />
+<use xlink:href="#cU0050" x="20 " y="1160" />
+<use xlink:href="#cU0051" x="260 " y="1160" />
+<use xlink:href="#cU0052" x="500 " y="1160" />
+<use xlink:href="#cU0053" x="740 " y="1160" />
+<use xlink:href="#cU0054" x="980 " y="1160" />
+<use xlink:href="#cU0055" x="1220 " y="1160" />
+<use xlink:href="#cU0056" x="1460 " y="1160" />
+<use xlink:href="#cU0057" x="1700 " y="1160" />
+<use xlink:href="#cU0058" x="1940 " y="1160" />
+<use xlink:href="#cU0059" x="2180 " y="1160" />
+<use xlink:href="#cU005A" x="2420 " y="1160" />
+<use xlink:href="#cU005B" x="2660 " y="1160" />
+<use xlink:href="#cU005C" x="2900 " y="1160" />
+<use xlink:href="#cU005D" x="3140 " y="1160" />
+<use xlink:href="#cU005E" x="3380 " y="1160" />
+<use xlink:href="#cU005F" x="3620 " y="1160" />
+<use xlink:href="#cU0060" x="20 " y="1540" />
+<use xlink:href="#cU0061" x="260 " y="1540" />
+<use xlink:href="#cU0062" x="500 " y="1540" />
+<use xlink:href="#cU0063" x="740 " y="1540" />
+<use xlink:href="#cU0064" x="980 " y="1540" />
+<use xlink:href="#cU0065" x="1220 " y="1540" />
+<use xlink:href="#cU0066" x="1460 " y="1540" />
+<use xlink:href="#cU0067" x="1700 " y="1540" />
+<use xlink:href="#cU0068" x="1940 " y="1540" />
+<use xlink:href="#cU0069" x="2180 " y="1540" />
+<use xlink:href="#cU006A" x="2420 " y="1540" />
+<use xlink:href="#cU006B" x="2660 " y="1540" />
+<use xlink:href="#cU006C" x="2900 " y="1540" />
+<use xlink:href="#cU006D" x="3140 " y="1540" />
+<use xlink:href="#cU006E" x="3380 " y="1540" />
+<use xlink:href="#cU006F" x="3620 " y="1540" />
+<use xlink:href="#cU0070" x="20 " y="1920" />
+<use xlink:href="#cU0071" x="260 " y="1920" />
+<use xlink:href="#cU0072" x="500 " y="1920" />
+<use xlink:href="#cU0073" x="740 " y="1920" />
+<use xlink:href="#cU0074" x="980 " y="1920" />
+<use xlink:href="#cU0075" x="1220 " y="1920" />
+<use xlink:href="#cU0076" x="1460 " y="1920" />
+<use xlink:href="#cU0077" x="1700 " y="1920" />
+<use xlink:href="#cU0078" x="1940 " y="1920" />
+<use xlink:href="#cU0079" x="2180 " y="1920" />
+<use xlink:href="#cU007A" x="2420 " y="1920" />
+<use xlink:href="#cU007B" x="2660 " y="1920" />
+<use xlink:href="#cU007C" x="2900 " y="1920" />
+<use xlink:href="#cU007D" x="3140 " y="1920" />
+<use xlink:href="#cU007E" x="3380 " y="1920" />
+<use xlink:href="#cU007F" x="3620 " y="1920" />
+</g>
+<use style="display:inline" xlink:href="#DisplayLabels" x="20" y="20" />
+</svg>
